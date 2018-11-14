@@ -47,8 +47,7 @@ module.exports = function(grunt) {
               'node_modules/@bower_components/angular-ui-router/release/angular-ui-router.js',
               'node_modules/@bower_components/angular-local-storage/dist/angular-local-storage.js',
               'node_modules/angularjs-slider/dist/rzslider.js',
-              'customlib/bootstrap.min.js',
-              'src/main.js', 'src/clientRoutes.js', 'src/partials/globals/**/*.js', 'src/partials/sections/**/*.js', 'src/partials/sections/**/**/*.js'
+              'customlib/bootstrap.min.js'
           ],
           dest:'tmdb/concatjs/tmdb.js'
         }]
