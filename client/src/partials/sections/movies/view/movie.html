@@ -1,0 +1,32 @@
+<!-- <link rel="stylesheet" href="src/partials/sections/movies/movie.css"> -->
+<loading size="large" name="beerPageLoading" type="block" align="center"></loading>
+   <div id='movieListingPage' class='fluid-container' ng-if="!beerPageLoading">
+      <div class='row'>
+         <div class="pull-left imageSection">
+            <span class="title hidden-xs">The Movie DB - Flix</span>
+         </div>
+         <div class='movieTabs pull-left'>
+            <div id='rightPanel' class='container-fluid'>
+               <ul id="myTab3" class="nav nav-tabs tabs-pull-left">
+                  <li ng-class="{active:movieType.tab.isSet('now_playing')}">
+                     <a ng-click="movieType.tab.setTab('now_playing')">      
+                     Now Playing
+                     </a>
+                  </li>
+                  <li ng-class="{active:movieType.tab.isSet('top_rated')}">
+                     <a ng-click="movieType.tab.setTab('top_rated')">
+                     Top Rated
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div class="{{movieType.tab.isSet('now_playing')? 'show-grid-tab':'hide-grid'}}">
+         <div ng-include="movieType.tab.templates.movieType.url"></div>
+      </div>
+      <div class="{{movieType.tab.isSet('top_rated')? 'show-grid-tab':'hide-grid'}}">
+         <div ng-include="movieType.tab.templates.movieType.url"></div>
+      </div>
+   </div>
+</div>

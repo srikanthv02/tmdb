@@ -1,0 +1,37 @@
+<div id="latestMoviePage">
+   <loading size="large" name="moviePageLoading" type="block" align="center"></loading>
+   <div class="storyBox" ng-if="!moviePageLoading">
+      <div class="col-lg-2 col-md-2">
+         <h4 class="header_color">Rating</h4>
+         <rzslider rz-slider-model="movieType.slider.value" rz-slider-options="movieType.slider.options"></rzslider>
+         <div class="checkbox_module hidden-xs hidden-sm">
+            <h4 class="header_color">Genre</h4>
+            <div ng-repeat="genre in movieType.genreList">
+               <input type="checkbox" ng-click="movieType.includeMovies(genre.name)"/>&nbsp;&nbsp;<span class="header_color">{{genre.name}}</span>
+            </div>
+         </div>
+      </div>
+      <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+         <div ng-if="movieType.movieList.length>0" class="storyElement">
+            <div class="movie_grid" ng-repeat="movie in movieType.movieList | filter:movieType.minFilter | filter:movieType.genreFilter">
+               <div class="movie_star"> 
+                  <span class="star_ratings fa fa-star-o">&nbsp;&nbsp;{{movie.rating}}</span>
+               </div>
+               <img ng-src="{{movie.poster}}" alt="{{movie.title}}" class="moviePoster"/>
+               <div class="movieDetails">
+                  <h4 title="{{movie.title}}">{{movie.title | limitTo: 22}}{{movie.title.length > 22 ? '...' : ''}}</h4>
+                  <div class="metadata">
+                     <span class="movieGenre" ng-repeat="movieGenres in movie.genre">{{movieGenres.name}}<span ng-if="!$last">,&nbsp;</span></span>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <ul ng-if="movieType.movieList.length == 0">
+            <li class="text-center">
+               <h4>No response available</h4>
+            </li>
+         </ul>
+      </div>
+      
+   </div>
+</div>

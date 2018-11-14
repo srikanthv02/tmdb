@@ -1,0 +1,115 @@
+/*CSS for defining colors Globally starts*/
+$color-black: #000;
+$color-white: #fff;
+$color-grey: #ddd;
+$color-tab: rgb(255, 152, 0);
+$color-background: #141414;
+/*CSS for defining colors Globally end here*/
+
+/*Defining box size*/
+* {
+    box-sizing: border-box;
+}
+
+/*HTML and Body Porperties*/
+html{overflow-x:hidden}
+body{
+    color: $color-black;
+    letter-spacing:0;
+    font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    overflow-x:hidden;
+    position:relative;
+    background: $color-background;
+    
+}
+
+ul , li {
+  list-style-type: none;
+}
+
+/*For Active tab*/
+
+.nav-tabs {
+  border-bottom: none;
+  margin-bottom: 15px;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+  border-width: 0;
+}
+
+.nav-tabs > li > a {
+  border: none;
+  color: $color-white;
+  cursor: pointer;
+  font-size: 17px;
+
+    &:after {
+      content: "";
+      background: $color-tab;
+      height: 2px;
+      position: absolute;
+      width: 100%;
+      left: 0px;
+      bottom: -1px;
+      transition: all 250ms ease 0s;
+      transform: scale(0);
+   } 
+
+   &:hover {
+      background: transparent;
+   }
+}
+
+.nav-tabs > li.active > a {
+  border: none;
+  color: $color-white;
+  background: transparent;
+  
+  &:after {
+    transform: scale(1);
+  }
+}
+
+
+/* grid view tab class*/
+.hide-grid {
+    margin: 0px auto; 
+    padding: 0px; 
+    visibility: hidden;
+    height: 0px; 
+    overflow: hidden;
+}
+
+.show-grid-tab {
+    visibility: visible;
+    height: auto;
+}
+
+.show-grid {
+    visibility: inherit;
+    height: auto;
+}
+
+.header_color {
+  color: $color-white;
+}
+
+.rzslider .rz-bubble {
+  color: $color-white!important;
+  .rz-limit {
+    color: $color-white!important;
+  }
+}
+
+@media (min-width : 0px) and (max-width: 767px) {
+  .nav-tabs > li > a {
+    font-size: 14px;
+  }
+}
+
+
+
+

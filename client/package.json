@@ -1,0 +1,62 @@
+{
+  "name": "beerapp",
+  "version": "0.0.1",
+  "description": "tmdb Coding Challenge",
+  "scripts": {
+    "start": "grunt --verbose",
+    "build-dev": "grunt build-dev --verbose",
+    "build-qa": "grunt build-qa --verbose",
+    "build-prod": "grunt build-prod --verbose",
+    "postinstall": "node -e \"try { require('fs').symlinkSync(require('path').resolve('node_modules/@bower_components'), 'bower_components', 'junction') } catch (e) { }\""
+  },
+  "author": "Srikanth Venkata",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/srikanthv02/tmdb"
+  },
+  "dependencies": {
+    
+    "grunt-concurrent": "^2.x.x",
+    "grunt-contrib-clean": "2.0.0",
+    "grunt-contrib-concat": "1.0.1",
+    "grunt-contrib-copy": "1.0.0",
+    "grunt-contrib-jshint": "2.0.0",
+    "grunt-contrib-sass": "^0.9.2",
+    "grunt-contrib-uglify": "4.0.0",
+    "grunt-processhtml": "^0.4.1",
+    "grunt-contrib-cssmin": "3.0.0",
+    "@bower_components/angular": "angular/bower-angular#~1.4.4",
+    "@bower_components/angular-animate": "angular/bower-angular-animate#~1.4.6",
+    "@bower_components/angular-local-storage": "grevory/angular-local-storage#0.7.1",
+    "@bower_components/angular-route": "angular/bower-angular-route#~1.4.4",
+    "@bower_components/angular-sanitize": "angular/bower-angular-sanitize#~1.4.7",
+    "@bower_components/angular-strap": "mgcrea/angular-strap#~2.3.1",
+    "@bower_components/angular-touch": "angular/bower-angular-touch#~1.4.7",
+    "@bower_components/angular-ui-router": "angular-ui/angular-ui-router-bower#~0.2.15",
+    "@bower_components/angularMultipleSelect": "jagdeepsingh91/angularMultipleSelect#^1.1.2",
+    "@bower_components/bootstrap": "twbs/bootstrap#~3.3.6",
+    "@bower_components/font-awesome": "FortAwesome/Font-Awesome#~4.4.0",
+    "@bower_components/glyphicons-halflings": "InWayOpenSource/glyphicons-halflings#*",
+    "@bower_components/jquery": "jquery/jquery-dist#~2.1.4",
+    "@bower_components/lodash": "lodash/lodash#^4.11.2",
+    "@bower_components/ngstorage": "gsklee/ngStorage#~0.3.9"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "connect": "^3.4.1",
+    "express": "^4.13.3",
+    "grunt": "^1.0.3",
+    "grunt-contrib-watch": "^0.6.x",
+    "grunt-mocha": "~0.4.6",
+    "grunt-newer": "^1.x.x",
+    "grunt-nodemon": "^0.4.x",
+    "load-grunt-tasks": "^4.0.0",
+    "mocha": "^2.5.3",
+    "sinon": "7.0.0",
+    "angularjs-slider": "6.6.1"
+  },
+  "engines": {
+    "yarn": ">= 1.0.0"
+  },
+  "private":true
+}

@@ -1,0 +1,242 @@
+/*This is used for beer cards*/
+/*CSS for defining colors Globally starts*/
+/*CSS for defining colors Globally end here*/
+/*CSS for Designing the beer page. Below is the media query for different resolutions*/
+#movieListingPage {
+  margin: 0 auto; }
+  #movieListingPage .imageSection {
+    width: 17%;
+    margin-top: 10px;
+    margin-left: 30px; }
+    #movieListingPage .imageSection img {
+      width: 22px;
+      height: 22px; }
+    #movieListingPage .imageSection .title {
+      font-size: 22px;
+      color: #fff; }
+  #movieListingPage .movieTabs {
+    margin: 0 auto;
+    width: 50%; }
+
+#latestMoviePage .moviePoster {
+  width: 240px; }
+#latestMoviePage .movie_grid {
+  position: relative;
+  display: inline-block;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-bottom: 32px;
+  transition: transform .1s ease-in-out; }
+#latestMoviePage .movie_star {
+  text-align: center; }
+  #latestMoviePage .movie_star .star_ratings {
+    position: relative;
+    padding: 6px;
+    width: 60px;
+    border-radius: 15px;
+    top: 15px;
+    background-color: #ff9800;
+    color: rgba(0, 0, 0, 0.87); }
+#latestMoviePage .movieDetails h4 {
+  font-size: 16px;
+  color: #ff9800; }
+#latestMoviePage .movieDetails .metadata {
+  margin-bottom: 15px;
+  font-size: 1.2rem; }
+  #latestMoviePage .movieDetails .metadata .movieGenre {
+    color: #fff;
+    font-size: 1.1rem; }
+
+/*Media query used for different resolutions*/
+@media (min-width: 0px) and (max-width: 575px) {
+  #movieListingPage {
+    width: 100%; }
+    #movieListingPage .imageSection {
+      width: 4%;
+      margin-top: 14px;
+      margin-left: 28px; }
+    #movieListingPage .movieTabs {
+      margin: 0 auto;
+      width: 88%; }
+
+  h4 {
+    font-size: 14px; } }
+@media (min-width: 576px) and (max-width: 991px) {
+  #movieListingPage {
+    width: 100%; }
+    #movieListingPage .imageSection {
+      width: 25%;
+      margin-top: 14px;
+      margin-left: 26px; }
+    #movieListingPage .movieTabs {
+      margin: 0 auto;
+      width: 52%; }
+
+  #latestMoviePage .moviePoster {
+    width: 210px; }
+  #latestMoviePage .movieDetails .metadata .movieGenre {
+    font-size: 1rem; } }
+@media (min-width: 992px) and (max-width: 1199px) {
+  #movieListingPage {
+    width: 100%; }
+    #movieListingPage .imageSection {
+      width: 20%;
+      margin-top: 14px;
+      margin-left: 50px; }
+    #movieListingPage .movieTabs {
+      margin: 0 auto;
+      width: 36%; } }
+#beerAppPage {
+  margin: 0 auto;
+  background-color: #fff;
+  width: 50%;
+  box-shadow: 0 2px 4px 0 rgba(170, 170, 170, 0.5); }
+  #beerAppPage section {
+    padding: 20px; }
+    #beerAppPage section .beerButtons {
+      float: right;
+      margin-bottom: 20px;
+      margin-left: 10px; }
+    #beerAppPage section article {
+      clear: both; }
+      #beerAppPage section article .clear {
+        clear: both; }
+  #beerAppPage .beerDetails {
+    border: 1px solid gray;
+    padding: 15px;
+    margin-bottom: 10px; }
+    #beerAppPage .beerDetails .beerImageSection {
+      float: left;
+      width: 15%;
+      margin-top: 12px; }
+      #beerAppPage .beerDetails .beerImageSection img {
+        width: 40px;
+        height: 154px; }
+    #beerAppPage .beerDetails .beerDescription {
+      float: left;
+      width: 80%; }
+      #beerAppPage .beerDetails .beerDescription .display {
+        display: inline; }
+      #beerAppPage .beerDetails .beerDescription p {
+        font-size: 1.2rem;
+        color: #202124c4; }
+        #beerAppPage .beerDetails .beerDescription p span {
+          font-weight: bold; }
+  #beerAppPage form.searchBar {
+    margin-bottom: 20px; }
+    #beerAppPage form.searchBar input[type=text] {
+      font-size: 14px;
+      float: left;
+      border: 1px solid grey;
+      height: 28px;
+      padding: 6px; }
+    #beerAppPage form.searchBar i {
+      float: left;
+      font-size: 14px;
+      border-left: none;
+      background: #2196F3;
+      padding: 6px;
+      cursor: pointer;
+      border: 1px solid #dadce0;
+      border-left: none;
+      /* Prevent double borders */
+      color: #fff; }
+    #beerAppPage form.searchBar .searchTypeCategory {
+      border: 1px solid #dadce0;
+      float: left;
+      margin-left: 20px;
+      padding: 3px 20px 4px 10px; }
+      #beerAppPage form.searchBar .searchTypeCategory input[type=radio] {
+        margin-left: 10px; }
+  #beerAppPage .beerSearchSection .storyBox {
+    clear: both;
+    height: 400px;
+    overflow-y: auto; }
+    #beerAppPage .beerSearchSection .storyBox .storyElement {
+      border: 1px solid #dadce0;
+      border-radius: 8px;
+      position: relative;
+      margin: 0 0 20px -40px;
+      padding: 2px 6px 10px 5px;
+      height: 150px; }
+    #beerAppPage .beerSearchSection .storyBox .storyDetails .beerSearchImage {
+      width: 10%;
+      padding-left: 15px;
+      float: left; }
+      #beerAppPage .beerSearchSection .storyBox .storyDetails .beerSearchImage img {
+        width: 30px;
+        height: 120px;
+        margin-top: 15px; }
+    #beerAppPage .beerSearchSection .storyBox .storyDetails h4, #beerAppPage .beerSearchSection .storyBox .storyDetails a {
+      color: black;
+      line-height: 1.4;
+      word-break: break-word;
+      overflow-wrap: break-word; }
+    #beerAppPage .beerSearchSection .storyBox .storyDetails .beerSearchDescription {
+      width: 85%;
+      float: left; }
+      #beerAppPage .beerSearchSection .storyBox .storyDetails .beerSearchDescription .metadata {
+        margin-bottom: 15px;
+        font-size: 1.2rem; }
+        #beerAppPage .beerSearchSection .storyBox .storyDetails .beerSearchDescription .metadata .storyBy {
+          color: #202124c4;
+          font-size: 1rem; }
+        #beerAppPage .beerSearchSection .storyBox .storyDetails .beerSearchDescription .metadata .foodPairing {
+          color: #202124c4;
+          margin-top: 10px; }
+
+/*Media query used for different resolutions*/
+@media (min-width: 0px) and (max-width: 575px) {
+  #beerAppPage {
+    width: 100%; }
+    #beerAppPage .appName {
+      width: 100%;
+      text-align: center; }
+    #beerAppPage .beerButtons {
+      float: left;
+      width: 47%; }
+    #beerAppPage .beerDetails .beerImageSection {
+      width: 100%;
+      margin-top: 0px; }
+      #beerAppPage .beerDetails .beerImageSection img {
+        display: block;
+        margin: auto; }
+    #beerAppPage .beerDetails .beerDescription {
+      width: 100%; }
+    #beerAppPage form.searchBar input[type=text] {
+      width: 92%; }
+    #beerAppPage form.searchBar .searchTypeCategory {
+      margin-left: 0px;
+      margin-top: 10px;
+      width: 100%; }
+      #beerAppPage form.searchBar .searchTypeCategory input[type=radio] {
+        margin-left: 50px; }
+    #beerAppPage .beerSearchSection .storyBox .storyElement {
+      padding: 0px;
+      height: 300px; }
+    #beerAppPage .beerSearchSection .storyBox .storyDetails .beerSearchImage {
+      margin-top: 10px;
+      width: 100%;
+      padding-left: 0px; }
+      #beerAppPage .beerSearchSection .storyBox .storyDetails .beerSearchImage img {
+        display: block;
+        margin: auto; }
+    #beerAppPage .beerSearchSection .storyBox .storyDetails .beerSearchDescription {
+      width: 100%;
+      padding-left: 10px;
+      padding-right: 10px; }
+
+  h4 {
+    font-size: 14px; } }
+@media (min-width: 576px) and (max-width: 991px) {
+  #beerAppPage {
+    width: 100%; } }
+@media (min-width: 992px) and (max-width: 1199px) {
+  #beerAppPage {
+    width: 100%; }
+    #beerAppPage .beerSearchSection .storyBox {
+      clear: both;
+      height: 800px;
+      overflow-y: auto; } }
+
+/*# sourceMappingURL=movie.css.map */
